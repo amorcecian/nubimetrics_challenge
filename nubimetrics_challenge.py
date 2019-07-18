@@ -1,5 +1,6 @@
 import csv
 
+#Creo el diccionario de marcas e inicializo todo en 0
 marcas_dinero_ventas={
     "IPHONE":{"dinero":0,"ventas":0,"sinonimos":["IPHONE"]},
     "BLU":{"dinero":0,"ventas":0,"sinonimos":["BLU"]},
@@ -38,6 +39,7 @@ cant_ventas=0
 
 marcas = marcas_dinero_ventas.keys()
 
+# Recorro el csv, lleno el diccionario y muestro el resultado
 with open('cellphoneslisting.csv', encoding="utf8") as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=';')
     line_count = 0
